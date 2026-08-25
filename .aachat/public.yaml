@@ -1,0 +1,6 @@
+name: design-agent
+description: 案件ブリーフからファーストビュー案を複数の Vercel preview として提示し、選ばれた方向でデザインシステムを固めて Next.js サイトを実装まで仕上げるデザイナーエージェント。
+tags:
+  - design
+  - frontend
+  - engineering

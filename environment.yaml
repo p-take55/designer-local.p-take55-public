@@ -1,0 +1,18 @@
+name: design-agent
+description: "Web ページのデザイン提案から Next.js 実装までを担うエージェントの実行環境"
+config:
+  packages:
+    brew:
+      - gh
+    npm:
+      - pnpm
+      - vercel
+  networking:
+    type: unrestricted
+  env:
+    - name: GITHUB_TOKEN
+      purpose: 案件ごとの GitHub repo 作成・push。依頼者の権限で動く。
+    - name: VERCEL_TOKEN
+      purpose: Vercel プロジェクト紐付け・preview/deploy 確認。
+    - name: OPENAI_API_KEY
+      purpose: gpt-image-2 でサイトの画像素材を生成する（asset-generation skill）。
